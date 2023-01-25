@@ -9,7 +9,7 @@ variable "location" {
 variable "servers" {
   type = map(string)
   default = {
-    "test.1cbrbbb.com" : "cpx41"
+    "test1.cbrbbb.com" : "cpx41"
   }
 }
 
