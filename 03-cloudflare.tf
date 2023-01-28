@@ -8,5 +8,5 @@ resource "cloudflare_record" "webinar_cbrbbb" {
   name    	= each.key
   value   	= hcloud_server.webinar[each.key].ipv4_address
   type    	= "A"
-  ttl     	= 3600
+  proxied       = true
 }
