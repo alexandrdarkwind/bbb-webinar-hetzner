@@ -823,8 +823,8 @@ HERE
     else
       # Place your fullchain.pem and privkey.pem files in /local/certs/ and bbb-install-2.5.sh will deal with the rest.
       mkdir -p "/etc/letsencrypt/live/$HOST/"
-      ln -s /local/certs/fullchain.pem "/etc/letsencrypt/live/$HOST/fullchain.pem"
-      ln -s /local/certs/privkey.pem "/etc/letsencrypt/live/$HOST/privkey.pem"
+      ln -s /local/certs/cbrbbb.com.pem "/etc/letsencrypt/live/$HOST/fullchain.pem"
+      ln -s /local/certs/cbrbbb.com.key "/etc/letsencrypt/live/$HOST/privkey.pem"
     fi
   fi
 

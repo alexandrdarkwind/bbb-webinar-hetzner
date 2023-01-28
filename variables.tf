@@ -31,3 +31,16 @@ variable "ssh_public_key" {
 variable "ssh_port" {
   default = "666"
 }
+
+#variable "cloudflare_api_token" {
+#  default = ""
+### export CLOUDFLARE_API_TOKEN=
+#}
+
+variable "cloudflare_email" {
+  default = "aslubsky@equalteam.net"
+}
+
+variable "cloudflare_zone_id" {
+  default = "6b3ff67adb859a1883449beec80f9dcd"
+}

@@ -23,6 +23,16 @@ resource "null_resource" "setup" {
     destination = "/root/bbb-install.sh"
  }
 
+ provisioner "file" {
+    source      = "certs/cbrbbb.com.key"
+    destination = "/local/certs/cbrbbb.com.key"
+ }
+
+ provisioner "file" {
+    source      = "certs/cbrbbb.com.pem"
+    destination = "/local/certs/cbrbbb.com.pem"
+ }
+
  provisioner "remote-exec" {
        inline = [
          "BBB_DOMAIN=${each.key} bash /root/bootstrap.sh"
